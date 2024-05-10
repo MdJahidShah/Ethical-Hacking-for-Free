@@ -1,0 +1,2 @@
+# Ethical Hacking for Free
+ This is an Ethical Hacking Basics course that for free to all. This course is to make you aware of how you should protect yourself in the online world. This course will not make you an expert hacker, but it will give you a good idea of how a hacker can attack you and your system. So, if you follow this, you will get updates about new vulnerabilities and solutions. We will share different article links several times that are written by experts that will help you to better understand.   So, stay with us.
