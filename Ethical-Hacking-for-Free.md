@@ -1,8 +1,7 @@
 <h1>Ethical Hacking for Free</h1>
-<h2>Resources</h2>
-    <ul>
-        <li><a target="_blank" href="https://github.com/MdJahidShah/SQL-Injection-Google-Dork-List/blob/main/Basic-SQL-Injection-Google-Dork-List.html">Basic SQL Injection Google Dork List</a></li>
-    </ul>
+<p align="center">
+  <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg"> <img src="https://img.shields.io/github/stars/payloadbox/sql-injection-payload-list?style=social"> <img src="https://img.shields.io/github/forks/payloadbox/sql-injection-payload-list?style=social"> <img src="https://img.shields.io/github/repo-size/payloadbox/sql-injection-payload-list"> <img src="https://img.shields.io/github/license/payloadbox/sql-injection-payload-list"> <img src="https://img.shields.io/github/issues/detail/author/payloadbox/command-injection-payload-list/1">
+</p>
 
 #### Basic SQL Injection Theory
 <p>
@@ -35,6 +34,10 @@ sleep(5)#
 1 or sleep(5)#
 
 ```
+### Resources
+    <ul>
+        <li><a target="_blank" href="https://github.com/MdJahidShah/SQL-Injection-Google-Dork-List/blob/main/Basic-SQL-Injection-Google-Dork-List.html">Basic SQL Injection Google Dork List</a></li>
+    </ul>
 
 #### SQL Injection Vulnerability Scanner Tool's :
 
