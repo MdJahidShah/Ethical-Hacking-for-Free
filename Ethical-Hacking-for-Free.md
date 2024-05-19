@@ -49,17 +49,18 @@ If the username 'admin' exists, the attacker gains access without needing a vali
 * **Denial of Service:** Attackers can disrupt database services.
 * **Data Integrity and Confidentiality Breach:** Compromised data can lead to loss of trust and legal consequences.
 #### 5. Prevention Techniques
-Input Validation and Sanitization: Ensure that user inputs are validated and sanitized. Use allowlists and disallowlists to filter out dangerous characters.
-Parameterized Queries (Prepared Statements): Use placeholders in SQL queries instead of concatenating user inputs directly.
-Stored Procedures: Encapsulate SQL queries within stored procedures to reduce the risk of injection.
-Least Privilege Principle: Restrict database user permissions to only what is necessary for the application.
-Web Application Firewalls (WAF): Use WAFs to detect and block SQL injection attempts.
-Regular Security Testing: Perform regular security audits, code reviews, and vulnerability assessments.
+* **Input Validation and Sanitization:** Ensure that user inputs are validated and sanitized. Use allowlists and disallowlists to filter out dangerous characters.
+* **Parameterized Queries (Prepared Statements):** Use placeholders in SQL queries instead of concatenating user inputs directly.
+* **Stored Procedures:** Encapsulate SQL queries within stored procedures to reduce the risk of injection.
+* **Least Privilege Principle:** Restrict database user permissions to only what is necessary for the application.
+* **Web Application Firewalls (WAF):** Use WAFs to detect and block SQL injection attempts.
+* **Regular Security Testing:** Perform regular security audits, code reviews, and vulnerability assessments.
 #### 6. Example of Parameterized Query
-Using parameterized queries in languages like PHP with PDO:
+**Using parameterized queries in languages like PHP with PDO:**
 
 ```
 $stmt = $pdo->prepare('SELECT * FROM users WHERE username = :username AND password = :password');
+
 $stmt->execute(['username' => $username, 'password' => $password]);
 ```
 
