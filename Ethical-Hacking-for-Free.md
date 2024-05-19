@@ -21,14 +21,14 @@ SQL injection exploits vulnerabilities in web applications that take user input 
 *  Union-based SQL Injection: Uses the UNION SQL operator to combine results from multiple SELECT statements into a single result set.
 3. Basic SQL Injection Example
 Consider a simple login form where the user inputs a username and password. The backend might construct an SQL query like this:
-</p>
+
 ```
 SELECT * FROM users WHERE username = 'user' AND password = 'pass';
 ```
-<p>If the application does not properly sanitize inputs, an attacker can input the following:
+If the application does not properly sanitize inputs, an attacker can input the following:
 
->> Username: admin'--
->> Password: anything
+<b>Username: admin'--
+Password: anything</b>
 The resulting query would be:
 
 ```
@@ -36,11 +36,11 @@ SELECT * FROM users WHERE username = 'admin'--' AND password = 'anything';
 ```
 
 The -- marks the start of a comment in SQL, so the rest of the query is ignored. This effectively becomes:
-</p>
+
 ```
 SELECT * FROM users WHERE username = 'admin';
 ```
-<p>If the username 'admin' exists, the attacker gains access without needing a valid password.
+If the username 'admin' exists, the attacker gains access without needing a valid password.
 
 4. Consequences of SQL Injection
 Unauthorized Data Access: Attackers can retrieve sensitive data.
@@ -57,12 +57,12 @@ Web Application Firewalls (WAF): Use WAFs to detect and block SQL injection atte
 Regular Security Testing: Perform regular security audits, code reviews, and vulnerability assessments.
 6. Example of Parameterized Query
 Using parameterized queries in languages like PHP with PDO:
-</p>
+
 ```
 $stmt = $pdo->prepare('SELECT * FROM users WHERE username = :username AND password = :password');
 $stmt->execute(['username' => $username, 'password' => $password]);
 ```
-<p>
+
 This approach ensures that user inputs are treated as data, not executable code, mitigating the risk of SQL injection.
 
 By understanding and implementing these principles, developers can significantly reduce the risk of SQL injection in their applications.</p>
